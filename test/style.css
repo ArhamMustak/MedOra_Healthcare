@@ -1,0 +1,104 @@
+/* Body & background image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image {
+    width: 200px;
+    height: auto;
+}
+
+/* Signup section */
+.signup {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+/* Left & Right */
+.left, .right {
+    flex: 1;
+    margin: 10px;
+}
+
+.left {
+    text-align: center;
+}
+
+.right {
+    text-align: left;
+}
+
+/* Form groups */
+.group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.edit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.9);
+}
+
+label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: rgba(255,255,255,0.9);
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+/* Error & success messages */
+.error {
+    color: red;
+    font-size: 12px;
+    height: 14px;
+    margin-top: 2px;
+}
+
+.success {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.edit.error-input {
+    border: 2px solid red;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn1 {
+    background: #ccc;
+}
+
+/* Footer */
+.footer {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+}
