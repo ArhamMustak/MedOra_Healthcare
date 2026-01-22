@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>MedOra | Diseases</title>
+  <title>MedOra | Doctors </title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,26 +15,43 @@
     <div class="sidebar">
       <h2>MedOra</h2>
       <ul>
-        <li>🏠 Home</li>
-        <li><a onclick="display()">👨‍⚕️ Diseases</li></a>
-        <li>📅 My Appointments</li>
+        <li><a onclick="home()">🏠 Home</li></a>
+        <li><a onclick="display()">👨‍⚕️ Doctors</li></a>
+        <li><a>📅 My Appointments</li></a>
         <li>💊 Prescriptions</li>
-        <li>⚙ Settings</li>
+        <li>💬Support</li>
+        <li><a onclick="setting()">⚙ Settings</li></a>
+
+        <li><a onclick="dash()">🚪 Logout</li></a>
       </ul>
     </div>
     <script>
       function display() {
         window.location.href = "index.html";
       }
+      function setting() {
+        window.location.href = "setting.html";
+
+      }
+      function home() {
+        window.location.href = "hom.html";
+      }
+      function dash() {
+        alert("Confirm Logout")
+        window.location.href = "c:/Users/TECH YARD/Desktop/MedOra_Healthcare/dashboard/dashboard.html";
+      }
+
 
 
     </script>
 
     <!-- MAIN CONTENT -->
     <div class="main">
+      <p class=""> <span class="date" id="date"></span> </p>
+
       <h1>Book Your Appointment</h1>
 
-      
+
 
       <div class="cards">
 
@@ -42,27 +59,27 @@
           <img src="car.jpeg">
           <h2>Cardiologist</h2>
           <p>Heart & Vascular Care</p>
-           <button onclick=car()>Book Your Appointment</button>
+          <button onclick=car()>Book Your Appointment</button>
           <script>
-            function car(){
-              window.location.href="index1.html";
-              
+            function car() {
+              window.location.href = "index1.html";
+
             }
           </script>
-          
+
         </div>
 
         <div class="card">
           <img src="neu.jpeg">
           <h2>Neurology </h2>
           <p>Brain & Nerve Health</p>
-          
+
           <button onclick=neur()>Book Your Appointment</button>
 
           <script>
-            function neur(){
-              window.location.href="index2.html";
-              
+            function neur() {
+              window.location.href = "index2.html";
+
             }
           </script>
         </div>
@@ -71,11 +88,11 @@
           <img src="psy.jpeg">
           <h2>Psychiatry</h2>
           <p>Mental Healthc& Wellness</p>
-           <button onclick=psy()>Book Your Appointment</button>
+          <button onclick=psy()>Book Your Appointment</button>
           <script>
-            function psy(){
-              window.location.href="index3.html";
-              
+            function psy() {
+              window.location.href = "index3.html";
+
             }
           </script>
         </div>
@@ -84,12 +101,12 @@
           <img src="gen.jpeg">
           <h2>General Physician </h2>
           <p>Annual Checkups,Fever,Fatigue</p>
-          
+
           <button onclick=gen()>Book Your Appointment</button>
           <script>
-            function gen(){
-              window.location.href="index4.html";
-              
+            function gen() {
+              window.location.href = "index4.html";
+
             }
           </script>
         </div>
@@ -97,12 +114,12 @@
           <img src="der.jpeg">
           <h2>Dermatology </h2>
           <p>Skin , Hair & Nails</p>
-          
+
           <button onclick=der()>Book Your Appointment</button>
           <script>
-            function der(){
-              window.location.href="index5.html";
-              
+            function der() {
+              window.location.href = "index5.html";
+
             }
           </script>
         </div>
@@ -110,12 +127,12 @@
           <img src="oph.jpeg">
           <h2>Ophthalmology </h2>
           <p>Eye & Vision Care</p>
-          
+
           <button onclick=oph()>Book Your Appointment</button>
           <script>
-            function oph(){
-              window.location.href="index6.html";
-              
+            function oph() {
+              window.location.href = "index6.html";
+
             }
           </script>
         </div>

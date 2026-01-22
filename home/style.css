@@ -18,6 +18,7 @@ body {
   padding: 20px;
   text-decoration: none;
   
+  
 }
 
 .sidebar ul {
@@ -183,6 +184,7 @@ h1{
   color: #4fd1c5;
 }
 
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .footer-bottom {
@@ -199,4 +201,132 @@ h1{
   padding: 5px;
   margin-top: 0%;
   margin-bottom: 5px;
+}
+.date{
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-left: 65%;
+
+}
+.settings-page {
+  margin-left: 100px;
+  padding: 30px;
+}
+
+.settings-page h2 {
+  margin-bottom: 30px;
+}
+
+.settings-page label {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.save-btn {
+  padding: 10px 20px;
+  background: #2d7ff9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+ margin-top: 200px;
+ margin-left: 300px;
+}
+.home {
+  margin-left: 60px;
+  padding: 30px;
+  font-family: sans-serif;
+}
+
+.home-header {
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background: #2d7ff9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+.section-title {
+  margin: 20px 0 10px;
+}
+
+.categories,
+.services {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cat-card,
+.service-card {
+  padding: 15px;
+  background: #f4f7ff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.doctor-list {
+  display: flex;
+  gap: 20px;
+}
+
+.doctor-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.doctor-card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background: #2d7ff9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.appointments {
+  display: flex;
+  gap: 15px;
+}
+
+.appt-card {
+  background: #eef4ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.emergency {
+  margin-top: 30px;
+  padding: 20px;
+  background: #5972a96c;
+  border-radius: 12px;
+}
+
+ol li {
+  padding: 10px;
 }
