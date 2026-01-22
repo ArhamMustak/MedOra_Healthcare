@@ -23,6 +23,17 @@
 
         <div class="nav_item_div">
           <a href="#bg_img2_div">ABOUT US</a>
+    <div id="nav_container">
+        <img id="logo_img" src="logo.jpeg" alt="" height="100px" width="100px">
+        
+        <div  class="nav_item_div"><a href="#bg_img2_div">ABOUT US</a></div>
+        <div  class="nav_item_div"><a href="#bg_img3_div">OUR SERVICES</a></div>
+        <div  class="nav_item_div"><a href="#bg_img4_div">CONSULT A DOCTOR</a></div>
+        <div  class="nav_item_div"><a href="#bg_img5_div">CONTACT US</a></div>
+        <div  class="nav_item_div"><a href="#last_bar">FEEDBACK</a></div>
+        <div   id="signin_btn">
+            <div id="sign_btn_ani_border"></div>
+          <a href="../login/login.php"><input type="button" value="SIGN IN" style="font-weight: bolder;"></a> 
         </div>
         <div class="nav_item_div">
           <a href="#bg_img3_div">OUR SERVICES</a>

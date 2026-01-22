@@ -29,36 +29,36 @@
       <div class="right">
         <h1>Join with our Healthcare..</h1>
         <p class="login">
-          <a href="C:\Users\TECH YARD\Desktop\MedOra_Healthcare\login.html\login.html">Already Have Account?</a>
+          <a href="../login/login.php">Already Have Account?</a>
         </p>
 
-        <form id="myform">
+        <form id="myform" action="../backend/signUp_logic.php" method="POST">
           <div class="group">
-            <input class="edit" type="text" id="name" placeholder="Enter Your Name" required />
+            <input name="name" class="edit" type="text" id="name" placeholder="Enter Your Name" required />
             <label for="name">Enter Your Name</label>
             <div class="error" id="nameError"></div>
           </div>
 
           <div class="group">
-            <input class="edit" type="email" id="email" placeholder="Enter Your Email" required />
+            <input name="email" class="edit" type="email" id="email" placeholder="Enter Your Email" required />
             <label for="email">Enter Your Email</label>
             <div class="error" id="emailError"></div>
           </div>
 
           <div class="group">
-            <input class="edit" type="tel" id="mob" placeholder="Enter Your Mobile No" required />
+            <input name="mob" class="edit" type="tel" id="mob" placeholder="Enter Your Mobile No" required />
             <label for="mob">Enter Your Number</label>
             <div class="error" id="mobError"></div>
           </div>
 
           <div class="group">
-            <input class="edit" type="password" id="password" placeholder="Enter Password" required />
+            <input name="password"  class="edit" type="password" id="password" placeholder="Enter Password" required />
             <label for="password">Enter Password</label>
             <div class="error" id="passwordError"></div>
           </div>
 
           <div class="group">
-            <input class="edit" type="password" id="confirmPassword" placeholder="Re-Enter Password" required />
+            <input  class="edit" type="password" id="confirmPassword" placeholder="Re-Enter Password" required />
             <label for="confirmPassword">Re-Enter Password</label>
             <div class="error" id="confirmError"></div>
           </div>
@@ -71,6 +71,7 @@
       </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="signUp.js"></script>
+
   </body>
 </html>
