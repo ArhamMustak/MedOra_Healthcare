@@ -3,7 +3,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 #bg_img1_div{
     
     background-image: url(main_bg.png);
@@ -46,7 +45,6 @@ html{
 
 }
 
-
 #bg_img4_div div{
     background: linear-gradient(to left, white,white );
     height: fit-content;
@@ -56,12 +54,10 @@ html{
 }
 
 
-
 #bg_img4_div img{
     height: 100ch;
     width: 50%;
 }
-
 
 
 #bg_img5_div{
@@ -82,7 +78,6 @@ html{
     height: 100ch;
     width: 50%;
 }
-
 
 
 
@@ -140,7 +135,6 @@ html{
 }
 
 
-
 @keyframes blink-animation {
 
     0%, 100%{
@@ -152,7 +146,6 @@ html{
         opacity: 0;
     }
 }
-
 
     
     
@@ -195,7 +188,6 @@ html{
 } 
 
 
-
 #signin_btn input{
     
     position: absolute;
@@ -216,7 +208,6 @@ html{
 #logo_img{
     border-radius: 50px;
 }
-
 
 pre{
     font-family: Arial, Helvetica, sans-serif;
@@ -263,3 +254,4 @@ pre{
 #last_bar h4 a :hover{
      cursor: pointer;
 }
+

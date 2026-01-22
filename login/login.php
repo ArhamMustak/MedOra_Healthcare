@@ -30,10 +30,10 @@
         <h1>Join with our Healthcare..</h1><br><br>
        
 
-        <form id="myform">
+        <form id="myform" action="../backend/login_logic.php" method="post">
           <div class="group">
              <label for="name">Enter Your Email</label>
-            <input class="edit" type="text" id="name" placeholder="Enter Your Email" required />
+            <input name="email" class="edit" type="text" id="name" placeholder="Enter Your Email" required />
            
             <div class="error" id="nameError"></div>
           </div>
@@ -42,7 +42,7 @@
 
           <div class="group">
             <label for="password">Enter Password</label>
-            <input class="edit" type="password" id="password" placeholder="Enter Password" required />
+            <input name="password" class="edit" type="password" id="password" placeholder="Enter Password" required />
             
             <div class="error" id="passwordError"></div>
           </div>
@@ -51,13 +51,13 @@
           
           <button type="submit">Login</button><br>
           <p class="reg">Don't Have an account?</p>
-          <a href="C:\Users\TECH YARD\Desktop\MedOra_Healthcare\signup\signup.html"><button type="button" class="btn1" onclick="display()" >Creat Account</button></a>
+          <a href="../signup/signup.php"><button type="button" class="btn1" onclick="display()" >Creat Account</button></a>
 
           <div id="successMsg" class="success"></div>
         </form>
       </div>
     </div>
 
-    <script src="login.js" ></script>
+    
   </body>
 </html>

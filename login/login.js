@@ -1,17 +1,29 @@
+
+
 document.getElementById("myform").addEventListener("submit", function (e) {
-  e.preventDefault();
+    
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("passwordError").textContent = "";
 
-  let loginEmail = document.getElementById("email").value;
-  let loginPassword = document.getElementById("password").value;
+    const email = document.getElementById("name").value.trim();
+    const password = document.getElementById("password").value;
 
-  let storedEmail = localStorage.getItem("medoraEmail");
-  let storedPassword = localStorage.getItem("medoraPassword");
+    let valid = true;
 
-  if (loginEmail === storedEmail && loginPassword === storedPassword) {
-    alert("Login successful!");
-    // redirect to dashboard
-    window.location.href = "dashboard.html";
-  } else {
-    alert("Invalid Email or Password!");
-  }
+    
+    if (!email.includes("@")) {
+        document.getElementById("nameError").textContent = "Enter a valid email";
+        valid = false;
+    }
+
+    if (password.length < 6) {
+        document.getElementById("passwordError").textContent = "Password must be at least 6 characters";
+        valid = false;
+    }
+
+    
+    if (!valid) {
+        e.preventDefault();
+    }
 });
+

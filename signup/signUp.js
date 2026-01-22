@@ -62,11 +62,17 @@ document.getElementById("myform").addEventListener("submit", function (e) {
         document.getElementById("confirmPassword").classList.remove("error-input");
     }
 
+    
     if (valid) {
-        alert("Registration Successful 🎉")
-        this.reset();
-        
+        //alert("Registration Successful 🎉")
+        //this.reset();
+        this.submit();
     }
+   // Muqshith added
+   if (!valid) {
+        e.preventDefault(); 
+    }
+
 
 
 });
