@@ -72,7 +72,7 @@ A General Physician at MedOra manages everything from common viral fevers to the
         <h3>Dr. Arham Mustak</h3>
         <p>General Physician</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button onclick="bookDoctor('Dr. Anya Sharma')">Book Now</button>
+        <button ><a href="/booking_form/booking.html" class="formLink">Book Now</a></button>
       </div>
 
       <div class="card">
@@ -80,7 +80,7 @@ A General Physician at MedOra manages everything from common viral fevers to the
         <h3>Dr.  Muqshith Ahamed</h3>
         <p>General Physician</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button onclick="bookDoctor('Dr. Rahul Singh')">Book Now</button>
+        <button ><a href="/booking_form/booking.html" class="formLink">Book Now</a></button>
       </div>
 
       <div class="card">
@@ -88,7 +88,7 @@ A General Physician at MedOra manages everything from common viral fevers to the
         <h3>Dr. Munsif Ahamed</h3>
         <p>General Physician</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button onclick="bookDoctor('Dr. Chen Wei')">Book Now</button>
+        <button ><a href="/booking_form/booking.html" class="formLink">Book Now</a></button>
       </div>
 
       <div class="card">
@@ -96,7 +96,7 @@ A General Physician at MedOra manages everything from common viral fevers to the
         <h3>Dr.Mohamed Sahdan </h3>
         <p>General Physician</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button onclick="bookDoctor('Dr. Maria Rodriguez')">Book Now</button>
+        <button ><a href="/booking_form/booking.html" class="formLink">Book Now</a></button>
       </div>
 
     </div>
