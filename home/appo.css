@@ -2,11 +2,13 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #eef6ff;
+  
 }
 
 .container {
- 
- display: flex;
+    display: flex;
+    
+
 }
 
 /* SIDEBAR */
@@ -17,6 +19,7 @@ body {
   height: 1100px;
   padding: 20px;
   text-decoration: none;
+  
   
   
 }
@@ -104,8 +107,11 @@ h1{
 .medora-footer {
   
   background: #0b3c5d;
-  color: #fff;
+  color: #dbd5d5;
   font-family: Arial, sans-serif;
+  
+  
+
   
 }
 
@@ -114,6 +120,9 @@ h1{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
   padding: 50px;
+
+
+ 
 }
 
 .footer-box h3 {
@@ -331,4 +340,6 @@ h1{
 ol li {
   padding: 10px;
 }
+
+
 

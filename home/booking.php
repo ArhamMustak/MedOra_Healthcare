@@ -68,7 +68,7 @@
                     
                         <br><br>
                     <label>Doctor Name</label>
-                        <input type="text" class="booked_doca" id="for"> <br>  
+                        <input type="text" class="booked_doca" id="for" readonly> <br>  
 
                     <label>Reason for Visit</label>         
                         <input type="text" class="gang" id="for" placeholder="Please describe your reason for visit...">
@@ -99,7 +99,7 @@
 
     <script>
         const params= new URLSearchParams(window.location.search);
-        const doctorName = params.get("booked_doca");
+        const doctorName = params.get("doctor");
         if(doctorName){
             document.querySelector(".booked_doca").value=doctorName;
         }

@@ -69,34 +69,34 @@ A General Physician at MedOra manages everything from common viral fevers to the
 
       <div class="card">
         <img src="doc1.jpeg">
-        <h3>Dr. Arham Mustak</h3>
+        <h3 class="doca">Dr. Arham Mustak</h3>
         <p>General Physician</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button ><a href="../booking_form/booking.php" class="formLink">Book Now</a></button>
+        <button  class="formLink" onclick="goToForm(this)">Book Now</button>
       </div>
 
       <div class="card">
         <img src="doc2.jpeg">
-        <h3>Dr.  Muqshith Ahamed</h3>
+        <h3 class="doca">Dr.  Muqshith Ahamed</h3>
         <p>General Physician</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button ><a href="../booking_form/booking.php" class="formLink">Book Now</a></button>
+        <button  class="formLink" onclick="goToForm(this)">Book Now</button>
       </div>
 
       <div class="card">
         <img src="doc3.jpeg">
-        <h3>Dr. Munsif Ahamed</h3>
+        <h3 class="doca">Dr. Munsif Ahamed</h3>
         <p>General Physician</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button ><a href="../booking_form/booking.php" class="formLink">Book Now</a></button>
+        <button  class="formLink" onclick="goToForm(this)">Book Now</button>
       </div>
 
       <div class="card">
         <img src="doc4.jpeg">
-        <h3>Dr.Mohamed Sahdan </h3>
+        <h3 class="doca">Dr.Mohamed Sahdan </h3>
         <p>General Physician</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button ><a href="../booking_form/booking.php" class="formLink">Book Now</a></button>
+        <button  class="formLink" onclick="goToForm(this)">Book Now</button>
       </div>
 
     </div>
@@ -175,5 +175,14 @@ A General Physician at MedOra manages everything from common viral fevers to the
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+    function goToForm(button){
+      const doctorName =button.parentElement.querySelector(".doca").innerText;
+      window.location.href="booking.php?doctor="+encodeURIComponent(doctorName);
+
+    }
+    
+  </script>
 </body>
 </html>
