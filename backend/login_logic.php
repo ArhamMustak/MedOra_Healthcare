@@ -11,7 +11,7 @@ if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_assoc($result);
 
     if (password_verify($password, $row['password'])) {
-        header("Location: ../home/index.php");
+        header("Location: ../home/hom.php");
         exit();
         
     } else {

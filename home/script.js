@@ -1,5 +1,3 @@
-
-
 function updateDateTime(){
 const now = new Date();
 

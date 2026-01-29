@@ -102,11 +102,11 @@ h1{
 }
 
 .medora-footer {
+  
   background: #0b3c5d;
   color: #fff;
   font-family: Arial, sans-serif;
   
- 
 }
 
 .footer-container {
@@ -330,4 +330,9 @@ h1{
 
 ol li {
   padding: 10px;
+}
+
+#demo{
+
+  color: red;
 }

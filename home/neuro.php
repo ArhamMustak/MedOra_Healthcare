@@ -81,7 +81,7 @@ Neurology is the medical specialty that deals with the structural and functional
         <h3>Dr. Arham Mustak</h3>
         <p>Neurology Expert</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button ><a href="/booking_form/booking.html" class="formLink">Book Now</a></button>
+        <button ><a href="../booking_form/booking.php" class="formLink">Book Now</a></button>
       </div>
 
       <div class="card">
@@ -89,7 +89,7 @@ Neurology is the medical specialty that deals with the structural and functional
         <h3>Dr.  Muqshith Ahamed</h3>
         <p>Neurology Expert</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button ><a href="/booking_form/booking.html" class="formLink">Book Now</a></button>
+        <button ><a href="../booking_form/booking.php" class="formLink">Book Now</a></button>
       </div>
 
       <div class="card">
@@ -97,7 +97,7 @@ Neurology is the medical specialty that deals with the structural and functional
         <h3>Dr. Munsif Ahamed</h3>
         <p>Neurology Expert</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button ><a href="/booking_form/booking.html" class="formLink">Book Now</a></button>
+        <button ><a href="../booking_form/booking.php" class="formLink">Book Now</a></button>
       </div>
 
       <div class="card">
@@ -105,7 +105,7 @@ Neurology is the medical specialty that deals with the structural and functional
         <h3>Dr.Mohamed Sahdan </h3>
         <p>Neurology Expert</p>
         <span>⭐ 4.9 (350+ Reviews)</span>
-        <button ><a href="/booking_form/booking.html" class="formLink">Book Now</a></button>
+        <button ><a href="../booking_form/booking.php" class="formLink">Book Now</a></button>
       </div>
 
     </div>

@@ -15,30 +15,39 @@
         <div class="sidebar">
             <h2>MedOra</h2>
             <ul>
+
                 <li><a onclick="home()">🏠 Home</li></a>
                 <li><a onclick="display()">👨‍⚕️ Doctors</li></a>
-                <li><a>📅 My Appointments</li></a>
+                <li><a onclick="appo()">📅 My Appointments</li></a>
                 <li>💊 Prescriptions</li>
                 <li>💬Support</li>
-                <li><a onclick="setting()"></a>⚙ Settings</li>
+                <li><a onclick="setting()">⚙ Settings</li></a>
 
                 <li><a onclick="dash()">🚪 Logout</li></a>
             </ul>
         </div>
         <script>
             function display() {
-                window.location.href = "index.html";
+                window.location.href = "doctor_dashboard.php";
             }
+
             function setting() {
-                window.location.href = "setting.html";
+                window.location.href = "setting.php";
 
             }
+
             function home() {
-                window.location.href = "hom.html";
+                window.location.href = "hom.php";
             }
+
             function dash() {
                 alert("Confirm Logout")
-                window.location.href = "c:/Users/TECH YARD/Desktop/MedOra_Healthcare/dashboard/dashboard.html";
+                window.location.href = "../dashboard/dashboard.php";
+            }
+
+            function appo() {
+
+                window.location.href = "myAppointments.php";
             }
 
 
@@ -51,9 +60,6 @@
             function toggleDarkMode() {
                 document.body.classList.toggle("dark");
             }
-
-
-
         </script>
 
 
@@ -63,41 +69,96 @@
 
 
 
-        <div class="settings-page" id="settingsPage">
+        <div class="home">
+            <p class="" style="text-align: justify;"> <span class="date" id="date"></span> </p>
 
-            <h2>Settings</h2>
 
-            <label>
-                <span>Dark Mode</span>
-                <input type="checkbox" onchange="toggleDarkMode()">
-            </label>
+            <!-- Header -->
+            <div class="home-header">
+                <h2>Welcome, 👋</h2>
+                <p>Book your appointment easily</p>
+            </div>
 
-            <label>
-                <span>Notifications</span>
-                <input type="checkbox">
-            </label>
-            <label>
-                <span>Sounds</span>
-                <input type="checkbox">
-            </label>
-            <label>
-                <span>Language</span>
-                <input type="checkbox">
-            </label>
-            <label>
-                <span>Account</span>
-                <input type="checkbox">
-            </label>
-            <label>
-                <span>About</span>
-                <input type="checkbox">
-            </label>
-            <label>
-                <span>Help</span>
-                <input type="checkbox">
-            </label>
+            <!-- Search -->
+            <div class="search-box">
+                <input type="text" placeholder="Search doctor, specialty, location...">
+                <button>Search</button>
+            </div>
+            <hr>
 
-            <button class="save-btn">Save Changes</button>
+            <!-- Categories -->
+            <h3 class="section-title">Categories</h3>
+            <div class="categories">
+                <div class="cat-card">Cardiology</div>
+                <div class="cat-card">Dermatology</div>
+                <div class="cat-card">Neurology</div>
+                <div class="cat-card">Psychiatry</div>
+                <div class="cat-card">Ophthalmology</div>
+                <div class="cat-card">General Physician</div>
+                <div class="cat-card">Heart Surgery</div>
+                <div class="cat-card">Brain Surgery</div>
+            </div>
+            <hr>
+
+            <h2>How To Book an appointment</h2>
+            <ol style="padding: 8px;">
+                <li>Go to Doctors.</li>
+                <li>Select Your Diseases.</li>
+                <li>Select One Doctor.</li>
+                <li>And Book appointment. </li>
+                <li>Check Your Email and Confirmation.</li>
+            </ol>
+            <hr>
+
+
+            <!-- Popular Doctors -->
+            <h3 class="section-title">Top Doctors</h3>
+            <div class="doctor-list">
+
+                <div class="doctor-card">
+                    <h4>Dr. Arham Mustak</h4>
+                    <p>Dermatologist</p>
+                    <span>⭐ 4.9</span>
+
+                </div>
+
+                <div class="doctor-card">
+                    <h4>Dr. Munsif Ahamed</h4>
+                    <p>Cardiologist</p>
+                    <span>⭐ 4.8</span>
+
+                </div>
+
+            </div>
+            <hr>
+
+            <!-- Appointments -->
+            <h3 class="section-title">Today Appointments</h3>
+            <div class="appointments">
+                <div class="appt-card">
+                    <p>Dr. Naruto</p>
+                    <span>10:30 AM</span>
+                </div>
+                <div class="appt-card">
+                    <p>Dr. Maria Giz</p>
+                    <span>2:00 PM</span>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Services -->
+            <h3 class="section-title">Our Services</h3>
+            <div class="services">
+                <div class="service-card">Online Consultation</div>
+                <div class="service-card">Lab Reports</div>
+                <div class="service-card">Emergency Care</div>
+                <div class="service-card">Pharmacy</div>
+            </div>
+            <hr>
+
+            <!-- Emergency -->
+
+
         </div>
     </div>
 

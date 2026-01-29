@@ -17,7 +17,7 @@
       <ul>
         <li><a onclick="home()">🏠 Home</li></a>
         <li><a onclick="display()">👨‍⚕️ Doctors</li></a>
-        <li><a>📅 My Appointments</li></a>
+        <li><a onclick="appo()">📅 My Appointments</li></a>
         <li>💊 Prescriptions</li>
         <li>💬Support</li>
         <li><a onclick="setting()">⚙ Settings</li></a>
@@ -27,18 +27,22 @@
     </div>
     <script>
       function display() {
-        window.location.href = "index.html";
+        window.location.href = "doctor_dashboard.php";
       }
       function setting() {
-        window.location.href = "setting.html";
+        window.location.href = "setting.php";
 
       }
       function home() {
-        window.location.href = "hom.html";
+        window.location.href = "hom.php";
       }
       function dash() {
         alert("Confirm Logout")
-        window.location.href = "c:/Users/TECH YARD/Desktop/MedOra_Healthcare/dashboard/dashboard.html";
+        window.location.href = "../dashboard/dashboard.php";
+      }
+      function appo() {
+        
+        window.location.href = "myAppointments.php";
       }
 
 
@@ -62,7 +66,7 @@
           <button onclick=car()>Book Your Appointment</button>
           <script>
             function car() {
-              window.location.href = "index1.html";
+              window.location.href = "cardio.php";
 
             }
           </script>
@@ -78,7 +82,7 @@
 
           <script>
             function neur() {
-              window.location.href = "index2.html";
+              window.location.href = "neuro.php";
 
             }
           </script>
@@ -91,7 +95,7 @@
           <button onclick=psy()>Book Your Appointment</button>
           <script>
             function psy() {
-              window.location.href = "index3.html";
+              window.location.href = "psyco.php";
 
             }
           </script>
@@ -105,7 +109,7 @@
           <button onclick=gen()>Book Your Appointment</button>
           <script>
             function gen() {
-              window.location.href = "index4.html";
+              window.location.href = "general.php";
 
             }
           </script>
@@ -118,7 +122,7 @@
           <button onclick=der()>Book Your Appointment</button>
           <script>
             function der() {
-              window.location.href = "index5.html";
+              window.location.href = "dermo.php";
 
             }
           </script>
@@ -131,7 +135,7 @@
           <button onclick=oph()>Book Your Appointment</button>
           <script>
             function oph() {
-              window.location.href = "index6.html";
+              window.location.href = "optho.php";
 
             }
           </script>
