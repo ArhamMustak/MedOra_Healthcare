@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "db_conn.php";
 
 $name = $_POST['name'];
@@ -6,7 +7,7 @@ $email = $_POST['email'];
 $mobile = $_POST['mob'];
 $password = $_POST['password'];
 
-// check if user already exists
+
 $check = "SELECT * FROM users WHERE email='$email'";
 $result = mysqli_query($conn, $check);
 
@@ -21,6 +22,8 @@ else {
 
                if (mysqli_query($conn, $insert)) {
                     //echo "succes";
+                    $_SESSION['user_id'] = mysqli_insert_id($conn);
+                    $_SESSION['user_name'] = $name;
                     header("Location: ../home/index.php");
                     exit();
                } 

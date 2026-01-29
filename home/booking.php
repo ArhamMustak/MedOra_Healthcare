@@ -19,7 +19,7 @@
 
 
 
-            <form action="" method="post" >
+            <form action="../backend/booking_logic.php" method="post" >
 
 
                 <div class="one">
@@ -30,48 +30,48 @@
 
 
                     <label>Name</label>
-                        <input type="text" required="required" id="for" placeholder="Enter Your Name">
+                        <input name="name" type="text" required="required" id="for" placeholder="Enter Your Name">
                     
                     <br><br>
 
 
 
                     <label>Email</label>
-                        <input type="email" required="required" id="for" placeholder="Enter Your Email">
+                        <input name="email" type="email" required="required" id="for" placeholder="Enter Your Email">
                     <br> <br>   
                    
 
 
                     <label>Address</label>
                         
-                        <textarea name="" id="for" required="required" placeholder="Enter your address"></textarea>
+                        <textarea name="address" name="" id="for" required="required" placeholder="Enter your address"></textarea>
                     <br><br>
                    
 
 
 
                     <label>Phone Number</label>
-                        <input type="number" required="required" id="for" placeholder="Enter Your Phone Number">
+                        <input name="phone" type="number" required="required" id="for" placeholder="Enter Your Phone Number">
                     
                     <br><br>
 
 
                     <label>Age</label>
-                        <input type="number" required="require" id="for" placeholder="Enter Your Age">
+                        <input name="age" type="number" required="required" id="for" placeholder="Enter Your Age">
                     
                     <br><br>
 
 
                     <label>Gender</label>
-                        <input type="radio" required="required" name="mar">Male
-                        <input type="radio" required="required" name="mar">Female
+                        <input type="radio" required="required" name="gender">Male
+                        <input type="radio" required="required" name="gender">Female
                     
                         <br><br>
                     <label>Doctor Name</label>
-                        <input type="text" class="booked_doca" id="for" readonly> <br>  
+                        <input name="doctor_name" type="text" class="booked_doca" id="for" readonly> <br>  
 
                     <label>Reason for Visit</label>         
-                        <input type="text" class="gang" id="for" placeholder="Please describe your reason for visit...">
+                        <input name="reason" type="text" class="gang" id="for" placeholder="Please describe your reason for visit...">
                     
 
                     <br>
@@ -79,7 +79,7 @@
                 
 
                     <center>
-                        <button class="two" onclick="change()">Book Appointment</button>
+                        <button type="submit" class="two" onclick="change()">Book Appointment</button>
 
                     </center>
 
@@ -90,12 +90,12 @@
             </form>
         </div>
     </div>
-    <script>
+    <!-- <script>
         function change() {
             alert("Your submision is successful...")
         }
 
-    </script>
+    </script> -->
 
     <script>
         const params= new URLSearchParams(window.location.search);

@@ -1,3 +1,21 @@
+<?php
+    session_start();
+    include "../backend/db_conn.php";
+
+    if (!isset($_SESSION['user_id'])) {
+    die("Please log in first.");
+    }       
+
+    $user_id = $_SESSION['user_id'];
+
+    $query = "SELECT * FROM appointments WHERE id='$user_id' ORDER BY appoint_id DESC";
+    $result = mysqli_query($conn, $query);
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,7 +81,43 @@
         </script>
 
         <div class="main">
-            <h1>This page shows My appinment Histories</h1>
+            <h1>Your appinment Histories</h1>
+
+
+            <div>
+                <table>
+                    <tr >
+                        <th>Appointment ID</th>
+                        <th>Patient Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Doctor Name</th>
+                        <th>Reason</th>
+                        <th>Booked At</th>
+                    </tr>
+
+                    <?php while($row=mysqli_fetch_assoc($result)) { ?>
+                    <tr>
+                        <td>    <?php echo $row['appoint_id']; ?> </td>
+                        <td>    <?php echo $row['name']; ?>    </td>
+                        <td>    <?php echo $row['email']; ?>    </td>
+                        <td>    <?php echo $row['address']; ?>    </td>
+                        <td>    <?php echo $row['phone']; ?>    </td>
+                        <td>    <?php echo $row['age']; ?>    </td>
+                        <td>    <?php echo $row['gender']; ?>    </td>
+                        <td>    <?php echo $row['doctor_name']; ?>    </td>
+                        <td>    <?php echo $row['reason']; ?>    </td>
+                        <td>    <?php echo $row['booked_at']; ?>    </td>
+                    </tr>
+                    
+
+                    <?php } ?>
+                
+                </table>
+            </div>
 
 
 
